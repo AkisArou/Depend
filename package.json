@@ -1,0 +1,20 @@
+{
+  "name": "depend",
+  "version": "1.0.0",
+  "description": "IoC for JS and TS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel ./example/index.html",
+    "build": "parcel build ./example/index.html"
+  },
+  "author": "AkisARou",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "src": "^1.1.2"
+  }
+}
