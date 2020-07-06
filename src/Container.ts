@@ -10,7 +10,7 @@ export class Container<T extends Constructor> {
 
     public static readonly instance = new Container();
 
-    public bind(name: Identifier) {
+    public bind<I>(name: Identifier) {
         this.tempName = name;
         return this;
     }
