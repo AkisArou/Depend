@@ -2,7 +2,7 @@
   "name": "depend",
   "version": "1.0.0",
   "description": "IoC for JS and TS",
-  "main": "index.js",
+  "main": "lib/index.js",
   "type": "module",
   "scripts": {
     "dev": "parcel ./example/index.html",
