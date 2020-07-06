@@ -102,18 +102,7 @@ cont.init();
 setInterval(async () => {
     const cont = new Cont();
     await cont.init();
-}, 10_000)
-
-
-
-
-
-
-
-
-
-
-
+}, 10_000);
 
 
 
