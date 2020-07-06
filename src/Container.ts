@@ -20,7 +20,7 @@ export class Container<T extends Constructor> {
         return this;
     }
 
-    public submit(type: Scope) {
+    public withScope(type: Scope) {
         switch (type) {
             case Scope.SINGLETON:
                 this.singletons.set(this.tempName!, new this.tempCls!());

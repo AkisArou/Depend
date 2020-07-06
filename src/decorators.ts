@@ -4,7 +4,7 @@ import {Constructor, Identifier, Instance} from "./types";
 
 export function Injectable(type: Identifier, lifetime: Scope = Scope.ON_DEMAND) {
     return function (target: Constructor): void {
-        Container.instance.bind(type).to(target).submit(lifetime);
+        Container.instance.bind(type).to(target).withScope(lifetime);
     }
 }
 

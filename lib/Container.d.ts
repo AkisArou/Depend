@@ -7,9 +7,9 @@ export declare class Container<T extends Constructor> {
     private tempCls?;
     private tempName?;
     static readonly instance: Container<Constructor>;
-    bind(name: Identifier): this;
+    bind<I>(name: Identifier): this;
     to(cls: Constructor): this;
-    submit(type: Scope): void;
+    withScope(type: Scope): void;
     get<I>(name: Identifier): I;
 }
 //# sourceMappingURL=Container.d.ts.map
